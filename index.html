@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body { background: #00001a;}
+.container {
+    position: relative;
+    text-align: top-left;
+    color: white;
+}
+h2 { color: #9999ff;}
+p {color: white;
+  font-size: 20px;
+}
+
+#head-title {font-size: 25px;}
+.top-left {
+    position: absolute;
+   top: 20%;
+    left: 60%;
+    transform: translate(-85%, -40%);
+}
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    transform: translate(40%, -70%);
+
+}
+.bottom-left2 {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    transform: translate(-140%, -70%);
+
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-95%, -200%);
+}
+.mySlides {width: 900px;
+           
+  
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+</style>
+<body>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  
+  
+  
+ <div class="mySlides w3-animate-fading">
+ <h2 style="color:#00001a">На побережье Вселенной</h2>
+  <img  src="https://i.pinimg.com/originals/19/83/e3/1983e3ebb67d909f08458bc3f146539d.jpg" style="width:100%" >
+  <div ><p class="centered" id="head-title">
+  
+ На побережье Вселенной</p> </div>
+ </div> 
+ 
+
+<div class="mySlides w3-animate-fading">
+<h2 style="color:#00001a">На побережье Вселенной</h2>
+  <img  src="http://c8.alamy.com/comp/DT2B66/illustrative-image-of-couple-sitting-on-half-moon-against-night-sky-DT2B66.jpg" style="width:100%" >
+  <div ><p class="top-left">
+  Мы сидим на краю Луны,<br>
+Скользя взглядами по  прибою.<br>
+И ногами в прохладе волны <br>
+Мы болтаем вдвоём с тобою.</p> </div>
+ </div> 
+ 
+ <div class="mySlides w3-animate-fading">
+ <h2 style="color:#00001a">На побережье Вселенной</h2>
+  <img  src="https://thumbor.forbes.com/thumbor/960x0/smart/https%3A%2F%2Fblogs-images.forbes.com%2Fstartswithabang%2Ffiles%2F2017%2F12%2Fflying-galaxy-in-cluster.jpg" style="width:100%" >
+  <div ><p class="bottom-left">
+ Перед взором Вселенский простор,<br>
+Ослеплённый лучами Солнца.<br>
+Льётся шёпотом разговор <br>
+В тишине безмолвного космоса.</p> </div>
+ </div> 
+ 
+ <div class="mySlides w3-animate-fading">
+ <h2 style="color:#00001a">На побережье Вселенной</h2>
+  <img  src="http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/3x/sw/p03xsw49.jpg" style="width:100%" >
+  <div ><p class="top-left">
+  Перед нами безбрежный мир<br>
+Безграничных страстных желаний.<br>
+Пляж Вселенной-как ловкий факир,<br>
+С волшебством  за пределом знаний.</p> </div>
+ </div>
+ 
+  <div class="mySlides w3-animate-fading">
+  <h2 style="color:#00001a">На побережье Вселенной</h2>
+  <img  src="https://ak5.picdn.net/shutterstock/videos/7837885/thumb/12.jpg?i10c=img.resize(height:160)" style="width:100%" >
+  <div ><p class="centered2">
+  
+ Строим замок с тобой из звёзд,<br> 
+Его новой волной смывает.<br>
+Мы смеёмся и шутим всерьёз...<br>
+В этой жизни и так бывает.</p> </div>
+ </div>
+ 
+ <div class="mySlides w3-animate-fading">
+ <h2 style="color:#00001a">На побережье Вселенной</h2>
+  <img  src="https://i.pinimg.com/originals/19/83/e3/1983e3ebb67d909f08458bc3f146539d.jpg" style="width:100%" >
+  <div ><p class="centered">
+ И космический океан <br>
+Тихо шепчет своим прибоем:<br>
+" Всё иллюзия и обман!", <br>
+Но желает нам счастья с тобою.</p> </div>
+ </div>
+ 
+ <div class="mySlides w3-animate-fading">
+  
+  <div ><p class="centered">Ирина Митюшина</p> </div>
+ </div>
+ 
+ 
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
+
+</body>
+</html>
